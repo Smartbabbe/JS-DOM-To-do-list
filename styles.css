@@ -1,5 +1,5 @@
 body {
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: teal;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ div h1 {
 
 .text button {
     font-size: 1.5rem;
-    color: white;
+    color: gray;
     background-color: aqua;
     border: 0;
     border-radius: 5px;
@@ -52,4 +52,63 @@ hr {
 
 .addedtasks {
     margin-top: 2rem;
+}
+
+#input:focus::placeholder{
+    color: transparent;
+}
+
+#addButton:hover {
+    cursor: pointer;
+    background-color: grey;
+    color: aqua;
+}
+
+/* Styling the todo list */
+
+#tasks {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.firsttask {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    /* height: ; */
+    align-items: center;
+}
+
+.inputs_first {
+    display: flex;
+    gap: 10px;
+}
+
+.inputs_first p {
+    width: 25rem;
+}
+
+.operations {
+    display: flex;
+    gap: 10px;
+}
+
+.operations .buttons {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+.operations .buttons:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, black, yellow);
+    background-color: purple;
+    color: pink;
+    border-radius: 15px 0 15px 0;
 }
